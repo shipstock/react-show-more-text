@@ -12,6 +12,7 @@
     "coverage": "nyc npm test && nyc report --reporter=text-lcov",
     "lint": "eslint .",
     "prepublish": "rm -rf ./lib && npm run compile",
+    "prepare": "rm -rf ./lib && npm run compile",
     "preversion": "npm run test",
     "report-coverage": "npm run coverage | coveralls",
     "test": "jest --watch",
